@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cart | Worksheet Hub (TEST)</title>
+<link rel="stylesheet" href="styles.css">
+<!-- 1. dataLayer starts BEFORE the GTM snippet so pageType is available on the first event -->
+<script>
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({pageType: 'cart'});
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N9RZK8W4');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body data-page="cart">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9RZK8W4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header class="site-header">
+  <a class="brand" href="index.html">Worksheet Hub<span class="tag">TEST SITE</span></a>
+  <nav id="main-nav" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="delivery.html">Delivery</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html" id="cart-link">Cart (<span class="cart-count">0</span>)</a>
+  </nav>
+</header>
+<main>
+<h1>Your cart</h1>
+<p id="cart-empty" hidden>Your cart is empty. <a href="shop.html">Browse the shop</a>.</p>
+<table id="cart-table" hidden>
+  <thead><tr><th>Item</th><th>Price</th><th>Qty</th><th>Line total</th><th></th></tr></thead>
+  <tbody id="cart-body"></tbody>
+  <tfoot><tr><th colspan="3">Subtotal</th><th id="cart-subtotal"></th><th></th></tr></tfoot>
+</table>
+<p><a id="checkout-link" class="btn primary" href="checkout.html" hidden>Proceed to checkout</a></p>
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <div class="newsletter">
+      <strong>Free worksheet updates</strong>
+      <form id="newsletter-form" novalidate>
+        <label for="newsletter-email" class="sr" style="display:none">Email</label>
+        <input type="email" id="newsletter-email" placeholder="you@example.com" autocomplete="off">
+        <button type="submit" id="subscribe-btn" class="btn primary">Subscribe</button>
+      </form>
+      <p id="newsletter-msg" role="status"></p>
+    </div>
+    <p>
+      <a id="footer-whatsapp" href="https://wa.me/920000000000" target="_blank" rel="noopener">WhatsApp us</a> |
+      <a id="footer-phone" href="tel:+920000000000">Call us</a> |
+      <a href="https://example.com/partner" target="_blank" rel="noopener">Partner site (outbound link)</a>
+    </p>
+    <small>Teaching sandbox. All products, prices and orders are fake. Never type real personal data.</small>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

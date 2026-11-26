@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Worksheet Hub (TEST)</title>
+<link rel="stylesheet" href="styles.css">
+<!-- 1. dataLayer starts BEFORE the GTM snippet so pageType is available on the first event -->
+<script>
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({pageType: 'contact'});
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N9RZK8W4');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body data-page="contact">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9RZK8W4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header class="site-header">
+  <a class="brand" href="index.html">Worksheet Hub<span class="tag">TEST SITE</span></a>
+  <nav id="main-nav" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="delivery.html">Delivery</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html" id="cart-link">Cart (<span class="cart-count">0</span>)</a>
+  </nav>
+</header>
+<main>
+<h1>Contact us</h1>
+<div class="card">
+  <p><a id="whatsapp-link" href="https://wa.me/920000000000" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+  <p><a id="phone-link" href="tel:+920000000000">Call +92 000 0000000</a></p>
+  <p><a id="brochure-link" href="files/brochure.pdf">Download our brochure (PDF)</a></p>
+</div>
+<h2>Send an enquiry</h2>
+<form id="enquiry-form" novalidate>
+  <label for="enq-name">Name</label>
+  <input type="text" id="enq-name" autocomplete="off">
+  <label for="enq-message">Message</label>
+  <textarea id="enq-message" rows="4"></textarea>
+  <p><button type="submit" id="enquiry-submit" class="btn primary">Send</button></p>
+  <p id="enquiry-msg" role="status"></p>
+</form>
+<small>Do not type real personal data. Nothing is sent anywhere.</small>
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <div class="newsletter">
+      <strong>Free worksheet updates</strong>
+      <form id="newsletter-form" novalidate>
+        <label for="newsletter-email" class="sr" style="display:none">Email</label>
+        <input type="email" id="newsletter-email" placeholder="you@example.com" autocomplete="off">
+        <button type="submit" id="subscribe-btn" class="btn primary">Subscribe</button>
+      </form>
+      <p id="newsletter-msg" role="status"></p>
+    </div>
+    <p>
+      <a id="footer-whatsapp" href="https://wa.me/920000000000" target="_blank" rel="noopener">WhatsApp us</a> |
+      <a id="footer-phone" href="tel:+920000000000">Call us</a> |
+      <a href="https://example.com/partner" target="_blank" rel="noopener">Partner site (outbound link)</a>
+    </p>
+    <small>Teaching sandbox. All products, prices and orders are fake. Never type real personal data.</small>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
